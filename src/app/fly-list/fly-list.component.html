@@ -1,0 +1,5 @@
+<ng-container *ngFor="let item of arr">
+    <app-fly-one2 [myFly]="item" (deleteFlyEvent)="g($event)"></app-fly-one2>
+</ng-container>
+<app-add-fly (addFlyEvent)="f($event)"></app-add-fly>
+<!-- <app-fly-one2 (deleteFlyEvent)="g($event)"></app-fly-one2> -->
